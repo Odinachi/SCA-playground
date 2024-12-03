@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:secondapp/features/Navigation/route_strings.dart';
 import 'package:secondapp/features/Navigation/router.dart';
-import 'package:secondapp/features/manual_input/manual_input.dart';
 import 'package:secondapp/features/rows/rows.dart';
 
-import '../listview/list_view.dart';
+import '../list_view/list_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -66,24 +65,10 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(
                     context,
-                    AppRouteStrings.manualInputScreen,
-                    arguments: ManualInputArg(
-                        pageContent: 'This is the content of our amazing page',
-                        pageTitle: "Custom page Amazing"),
+                    AppRouteStrings.userInputScreen,
                   );
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (_) => ManualInput(
-                  //       arg: ManualInputArg(
-                  //           pageContent:
-                  //               'This is the content of our amazing page',
-                  //           pageTitle: "Custom page Amazing"),
-                  //     ),
-                  //   ),
-                  // );
                 },
-                child: const Text("Manual Input Screen"),
+                child: const Text("User input"),
               ),
             ],
           ),
