@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:secondapp/features/Navigation/route_strings.dart';
 import 'package:secondapp/features/home/home_screen.dart';
+import 'package:secondapp/features/login/login_screen.dart';
 import 'package:secondapp/features/manual_input/manual_input.dart';
 import 'package:secondapp/features/user_input/user_input_screen.dart';
 
@@ -21,7 +22,9 @@ class AppRouter {
               ManualInput(arg: settings.arguments as ManualInputArg),
         );
       case AppRouteStrings.userInputScreen:
-        return CupertinoPageRoute(builder: (_) => UserInputScreen());
+        return CupertinoPageRoute(builder: (_) => const UserInputScreen());
+      case AppRouteStrings.loginScreen:
+        return CupertinoPageRoute(builder: (_) => const LoginScreen());
 
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
