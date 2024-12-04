@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:secondapp/features/constant.dart';
+import 'package:secondapp/shared/constant.dart';
 
 class UserInputScreen extends StatefulWidget {
   const UserInputScreen({super.key});

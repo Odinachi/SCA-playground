@@ -72,6 +72,7 @@ class HomeScreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
+                  //LINK TO FIGMA: https://www.figma.com/design/ULwXU44cknhSKjTkegHOjY/Login-Mobile-UI-(Community)?node-id=102-19&t=Vm5qjrw1jXRY3naQ-1
                   Navigator.pushNamed(
                     context,
                     AppRouteStrings.loginScreen,
