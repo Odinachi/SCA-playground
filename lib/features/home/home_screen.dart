@@ -80,6 +80,15 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text("Login screen"),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.carouselScreen,
+                  );
+                },
+                child: const Text("Carousel screen"),
+              ),
             ],
           ),
         ),

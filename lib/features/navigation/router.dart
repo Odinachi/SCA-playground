@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:secondapp/features/Navigation/route_strings.dart';
+import 'package:secondapp/features/carousel/carousel_screen.dart';
 import 'package:secondapp/features/home/home_screen.dart';
 import 'package:secondapp/features/login/login_screen.dart';
 import 'package:secondapp/features/manual_input/manual_input.dart';
@@ -25,6 +26,8 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const UserInputScreen());
       case AppRouteStrings.loginScreen:
         return CupertinoPageRoute(builder: (_) => const LoginScreen());
+      case AppRouteStrings.carouselScreen:
+        return CupertinoPageRoute(builder: (_) => const CarouselScreen());
 
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
