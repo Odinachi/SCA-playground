@@ -7,6 +7,7 @@ import 'package:secondapp/features/manual_input/manual_input.dart';
 import 'package:secondapp/features/user_input/user_input_screen.dart';
 
 import '../columns/column.dart';
+import '../page_view/page_view_screen.dart';
 
 class AppRouter {
   static final navKey = GlobalKey<NavigatorState>();
@@ -28,6 +29,8 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const LoginScreen());
       case AppRouteStrings.carouselScreen:
         return CupertinoPageRoute(builder: (_) => const CarouselScreen());
+      case AppRouteStrings.pageViewScreen:
+        return CupertinoPageRoute(builder: (_) => const PageViewScreen());
 
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
