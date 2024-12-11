@@ -23,6 +23,32 @@ class _PageViewScreenState extends State<PageViewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              _pageController.previousPage(
+                duration: const Duration(milliseconds: 1000),
+                curve: Curves.bounceOut,
+              );
+            },
+            child: const Icon(Icons.fast_rewind),
+          ),
+          const SizedBox(
+            width: 20,
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              _pageController.nextPage(
+                duration: const Duration(milliseconds: 1000),
+                curve: Curves.bounceOut,
+              );
+            },
+            child: const Icon(Icons.fast_forward),
+          ),
+        ],
+      ),
       appBar: AppBar(
         title: const Text('Page View Screen'),
       ),
