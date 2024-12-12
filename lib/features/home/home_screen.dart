@@ -98,6 +98,15 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text("Page View screen"),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.tabBarViewScreen,
+                  );
+                },
+                child: const Text("Tab Bar View screen"),
+              ),
             ],
           ),
         ),
