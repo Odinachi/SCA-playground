@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:secondapp/features/Navigation/route_strings.dart';
+import 'package:secondapp/features/back_values/pop_value_screen.dart';
 import 'package:secondapp/features/carousel/carousel_screen.dart';
 import 'package:secondapp/features/home/home_screen.dart';
 import 'package:secondapp/features/login/login_screen.dart';
@@ -34,6 +35,8 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const PageViewScreen());
       case AppRouteStrings.tabBarViewScreen:
         return CupertinoPageRoute(builder: (_) => const TabBarViewScreen());
+      case AppRouteStrings.popValueScreen:
+        return CupertinoPageRoute(builder: (_) => const PopValueScreen());
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
     }

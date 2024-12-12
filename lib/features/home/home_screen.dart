@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:secondapp/features/Navigation/route_strings.dart';
-import 'package:secondapp/features/Navigation/router.dart';
+import 'package:secondapp/features/manual_input/manual_input.dart';
 import 'package:secondapp/features/rows/rows.dart';
 
 import '../list_view/list_view.dart';
@@ -34,12 +34,18 @@ class HomeScreen extends StatelessWidget {
                     //       builder: (_) => const HomeScreenColumn()),
                     // );
                     //  Navigator.pushNamed(context, AppRouteStrings.columnScreen);
-                    // Navigator.pushNamed(context, "hello",
-                    //     arguments: ManualInputArg(
-                    //         pageTitle: "Title", pageContent: "Content"));
 
-                    AppRouter.pushNamed(
-                        routeName: AppRouteStrings.columnScreen);
+                    Navigator.pushNamed(
+                      context,
+                      AppRouteStrings.manualInputScreen,
+                      arguments: ManualInputArg(
+                        pageTitle: "new title",
+                        pageContent: "Content",
+                      ),
+                    );
+
+                    // AppRouter.pushNamed(
+                    //     routeName: AppRouteStrings.columnScreen);
                   },
                   child: const Text("Column Sample")),
               TextButton(
@@ -106,6 +112,16 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: const Text("Tab Bar View screen"),
+              ),
+              TextButton(
+                onPressed: () async {
+                  final getValue = await Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.popValueScreen,
+                  );
+                  print("value gotten back is $getValue");
+                },
+                child: const Text("Getting value back"),
               ),
             ],
           ),

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:secondapp/features/Navigation/route_strings.dart';
 import 'package:secondapp/features/Navigation/router.dart';
+import 'package:secondapp/features/navigation/route_strings.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       onGenerateRoute: AppRouter.appRouter,
-      initialRoute: AppRouteStrings.base,
+      initialRoute: AppRouteStrings.loginScreen,
     );
   }
 }
