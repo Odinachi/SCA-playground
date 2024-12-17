@@ -16,8 +16,22 @@ class MyApp extends StatelessWidget {
       navigatorKey: AppRouter.navKey,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        applyElevationOverlayColor: true,
+        appBarTheme: const AppBarTheme(
+            scrolledUnderElevation: 0,
+            backgroundColor: Colors.transparent,
+            elevation: 1,
+            titleTextStyle: TextStyle(
+              fontSize: 25,
+              color: Colors.pink,
+              fontWeight: FontWeight.w700,
+            )),
+        textTheme: const TextTheme(
+          titleMedium: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 30,
+          ),
+        ),
       ),
       onGenerateRoute: AppRouter.appRouter,
       initialRoute: AppRouteStrings.base,

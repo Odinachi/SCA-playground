@@ -44,10 +44,7 @@ class _UserInputScreenState extends State<UserInputScreen> {
                   children: [
                     Text(
                       "Input your details",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                      ),
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                     SizedBox(
                       height: 20,

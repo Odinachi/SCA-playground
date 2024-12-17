@@ -51,6 +51,7 @@ class _AnimatedWidgetScreenState extends State<AnimatedWidgetScreen> {
         ),
       ),
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         title: const Text("Animated Widget"),
       ),
       body: Padding(
