@@ -8,6 +8,7 @@ import 'package:secondapp/features/login/login_screen.dart';
 import 'package:secondapp/features/manual_input/manual_input.dart';
 import 'package:secondapp/features/user_input/user_input_screen.dart';
 
+import '../animated_widgets/animated_widget_screen.dart';
 import '../columns/column.dart';
 import '../page_view/page_view_screen.dart';
 import '../tabbar_view/tabbar_view_screen.dart';
@@ -40,6 +41,8 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const PopValueScreen());
       case AppRouteStrings.expansionTileScreen:
         return CupertinoPageRoute(builder: (_) => const ExpansionTileScreen());
+      case AppRouteStrings.animatedWidgetScreen:
+        return CupertinoPageRoute(builder: (_) => const AnimatedWidgetScreen());
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
     }

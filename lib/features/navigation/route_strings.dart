@@ -9,4 +9,5 @@ class AppRouteStrings {
   static const String tabBarViewScreen = "/tab_bar_view_screen";
   static const String popValueScreen = "/pop_value_screen";
   static const String expansionTileScreen = "/expansion_tile_screen";
+  static const String animatedWidgetScreen = "/animated_widget_screen";
 }

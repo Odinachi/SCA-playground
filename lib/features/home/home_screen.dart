@@ -131,6 +131,15 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text("Expansion Tile"),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.animatedWidgetScreen,
+                  );
+                },
+                child: const Text("Animated Widget"),
+              ),
             ],
           ),
         ),
