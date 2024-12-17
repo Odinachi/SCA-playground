@@ -119,9 +119,17 @@ class HomeScreen extends StatelessWidget {
                     context,
                     AppRouteStrings.popValueScreen,
                   );
-                  print("value gotten back is $getValue");
                 },
                 child: const Text("Getting value back"),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.expansionTileScreen,
+                  );
+                },
+                child: const Text("Expansion Tile"),
               ),
             ],
           ),
