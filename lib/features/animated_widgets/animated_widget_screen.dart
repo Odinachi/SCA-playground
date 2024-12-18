@@ -30,7 +30,6 @@ class _AnimatedWidgetScreenState extends State<AnimatedWidgetScreen> {
           color = Colors.orange;
           width = rnd.nextInt(500).toDouble();
           radius = rnd.nextInt(100).toDouble();
-
           alignment = [
             Alignment.topLeft,
             Alignment.bottomCenter,

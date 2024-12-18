@@ -3,6 +3,7 @@ import 'package:secondapp/features/Navigation/route_strings.dart';
 import 'package:secondapp/features/back_values/pop_value_screen.dart';
 import 'package:secondapp/features/carousel/carousel_screen.dart';
 import 'package:secondapp/features/expansion_tile/expansion_tile_screen.dart';
+import 'package:secondapp/features/future/future_screen.dart';
 import 'package:secondapp/features/home/home_screen.dart';
 import 'package:secondapp/features/login/login_screen.dart';
 import 'package:secondapp/features/manual_input/manual_input.dart';
@@ -43,6 +44,8 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const ExpansionTileScreen());
       case AppRouteStrings.animatedWidgetScreen:
         return CupertinoPageRoute(builder: (_) => const AnimatedWidgetScreen());
+      case AppRouteStrings.futureScreen:
+        return CupertinoPageRoute(builder: (_) => const FutureScreen());
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
     }

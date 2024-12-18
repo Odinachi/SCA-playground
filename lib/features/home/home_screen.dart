@@ -140,6 +140,15 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text("Animated Widget"),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.futureScreen,
+                  );
+                },
+                child: const Text("Future screen"),
+              ),
             ],
           ),
         ),
