@@ -149,6 +149,15 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text("Future screen"),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRouteStrings.streamScreen,
+                  );
+                },
+                child: const Text("Stream screen"),
+              ),
             ],
           ),
         ),

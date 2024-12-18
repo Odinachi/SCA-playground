@@ -45,8 +45,6 @@ class _FutureScreenState extends State<FutureScreen> {
     );
   }
 
-  void dummyAsync() async {}
-
   Future<String> _fetchWordsAsync() async {
     await Future.delayed(const Duration(seconds: 10), () {
       print("10 seconds elapsed");

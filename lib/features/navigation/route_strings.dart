@@ -11,4 +11,5 @@ class AppRouteStrings {
   static const String expansionTileScreen = "/expansion_tile_screen";
   static const String animatedWidgetScreen = "/animated_widget_screen";
   static const String futureScreen = "/future_screen";
+  static const String streamScreen = "/stream_screen";
 }

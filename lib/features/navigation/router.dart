@@ -7,6 +7,7 @@ import 'package:secondapp/features/future/future_screen.dart';
 import 'package:secondapp/features/home/home_screen.dart';
 import 'package:secondapp/features/login/login_screen.dart';
 import 'package:secondapp/features/manual_input/manual_input.dart';
+import 'package:secondapp/features/stream/stream_screen.dart';
 import 'package:secondapp/features/user_input/user_input_screen.dart';
 
 import '../animated_widgets/animated_widget_screen.dart';
@@ -46,6 +47,8 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const AnimatedWidgetScreen());
       case AppRouteStrings.futureScreen:
         return CupertinoPageRoute(builder: (_) => const FutureScreen());
+      case AppRouteStrings.streamScreen:
+        return CupertinoPageRoute(builder: (_) => const StreamScreen());
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
     }
