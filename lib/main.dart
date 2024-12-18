@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:secondapp/features/Navigation/router.dart';
 import 'package:secondapp/features/navigation/route_strings.dart';
 
+import 'features/local_storage/local_storage_screen.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  LocalStorageClass().initialize();
   runApp(const MyApp());
 }
 

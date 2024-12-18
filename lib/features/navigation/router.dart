@@ -5,6 +5,7 @@ import 'package:secondapp/features/carousel/carousel_screen.dart';
 import 'package:secondapp/features/expansion_tile/expansion_tile_screen.dart';
 import 'package:secondapp/features/future/future_screen.dart';
 import 'package:secondapp/features/home/home_screen.dart';
+import 'package:secondapp/features/local_storage/local_storage_screen.dart';
 import 'package:secondapp/features/login/login_screen.dart';
 import 'package:secondapp/features/manual_input/manual_input.dart';
 import 'package:secondapp/features/stream/stream_screen.dart';
@@ -49,6 +50,9 @@ class AppRouter {
         return CupertinoPageRoute(builder: (_) => const FutureScreen());
       case AppRouteStrings.streamScreen:
         return CupertinoPageRoute(builder: (_) => const StreamScreen());
+
+      case AppRouteStrings.localStorageScreen:
+        return CupertinoPageRoute(builder: (_) => const LocalStorageScreen());
       default:
         return CupertinoPageRoute(builder: (_) => const SizedBox());
     }
